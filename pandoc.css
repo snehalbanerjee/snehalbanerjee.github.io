@@ -1,18 +1,31 @@
 <style type="text/css">
 body {
     margin: auto;
-    padding-right: 1in;
-    padding-left: 1in;
-    max-width: 40em;
-    color: dark-gray;
-    font-family: Open Sans, sans-serif;
-    font-size: 100%;
+    padding-right: 1in blue;
+    padding-left: 1in blue;
+    max-width: 45em;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 90%;
     line-height: 140%;
-    color: #333;
+    color: #000;
+    background: #fefefe;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #000;
+  line-height: 140%;
+  font-weight: normal;
+}
+
 a {
 text-decoration: none;
 }
+
+ul li {
+     line-height:130%; /*or whatever height you like*/
+     margin-bottom: 0 em;
+}
+
 </style>
 
 <!----
