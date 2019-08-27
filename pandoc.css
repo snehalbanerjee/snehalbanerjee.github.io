@@ -1,0 +1,20 @@
+<style type="text/css">
+body {
+    margin: auto;
+    padding-right: 1in;
+    padding-left: 1in;
+    max-width: 40em;
+    color: dark-gray;
+    font-family: Open Sans, sans-serif;
+    font-size: 100%;
+    line-height: 140%;
+    color: #333;
+}
+a {
+text-decoration: none;
+}
+</style>
+
+<!----
+pandoc -H pandoc.css index.md -o index.html
+------>
