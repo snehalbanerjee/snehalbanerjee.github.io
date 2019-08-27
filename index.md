@@ -1,6 +1,4 @@
----
-title: Snehal Banerjee
----
+### SNEHAL BANERJEE
 
  ![](banerjee.jpg)
 
