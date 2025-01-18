@@ -4,12 +4,14 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="keywords" content="snehal, banerjee, rady finance, disagreement, University of california san diego, University of Michigan, Ross School of Business, Ann Arbor, finance, rational expectations equilibrium, difference of opinions, research dynamics, kellogg, stanford gsb, trading volume, volatility" />
+  <meta name="keywords" content="snehal, banerjee, rady
+finance, disagreement, University of california san diego, University of
+Michigan, Ross School of Business, Ann Arbor, finance, rational
+expectations equilibrium, difference of opinions, research
+dynamics, kellogg, stanford gsb, trading volume, volatility" />
   <title>Snehal Banerjee</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
       font-size: 11pt;
       color: #1a1a1a;
       background-color: #fdfdfd;
@@ -22,17 +24,23 @@
       padding-top: 50px;
       padding-bottom: 50px;
       hyphens: auto;
-      word-wrap: break-word;
+      overflow-wrap: break-word;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
     }
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -56,6 +64,10 @@
       color: #1a1a1a;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -82,9 +94,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -93,6 +106,7 @@
     pre code {
       padding: 0;
       overflow: visible;
+      overflow-wrap: normal;
     }
     .sourceCode {
      background-color: transparent;
@@ -134,20 +148,31 @@
     #TOC li {
       list-style: none;
     }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
     #TOC a:not(:hover) {
       text-decoration: none;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <style type="text/css">
   body {
       margin: auto;
@@ -198,89 +223,222 @@
 </h2>
 <table style="width:100%">
 <td width="30%" align="left">
-<a href="https://michiganross.umich.edu/faculty-research/areas-of-study/finance">Professor of Finance</a><br />
-<a href="https://michiganross.umich.edu/">Stephen M. Ross School of Business</a><br />
+<a
+href="https://michiganross.umich.edu/faculty-research/faculty/snehal-banerjee">Professor
+of Finance</a><br />
+<a href="https://michiganross.umich.edu/">Stephen M. Ross School of
+Business</a><br />
 <a href="https://umich.edu/">University of Michigan, Ann Arbor</a><br />
 Office: R5430<br />
 Email: <a href="mailto:snehalb@umich.edu">snehalb@umich.edu</a><br />
 <br />
-<a href="https://snehalbanerjee.github.io/banerjeecv.pdf">CURRICULUM VITAE</a><br />
-<a href="https://scholar.google.com/citations?user=w_H_FzEAAAAJ&amp;hl=en">(Google Scholar,</a> <a href="https://ssrn.com/author=403802">SSRN Page)</a><br />
+<a href="https://snehalbanerjee.github.io/banerjeecv.pdf">CURRICULUM
+VITAE</a><br />
+<a
+href="https://scholar.google.com/citations?user=w_H_FzEAAAAJ&amp;hl=en">(Google
+Scholar,</a> <a href="https://ssrn.com/author=403802">SSRN
+Page)</a><br />
 
 </td>
 <td width="40%" align="center">
-<img src="https://snehalbanerjee.github.io/banerjee.jpg" style="width:35.0%" />
+<img src="sbanerjee.jpg" style="width:50.0%" />
 </td>
 </table>
 <p><br />
 </p>
 <h3 id="refereed-publications">REFEREED PUBLICATIONS</h3>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeDavisGondhi2024.pdf">Choosing to Disagree: Endogenous Dismissiveness and Overconfidence in Financial Markets</a><br />
-(with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)<br />
-      <em>Journal of Finance</em>, 2024, <a href="https://doi.org/10.1111/jofi.13311">79(2):1635-1695</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BMS2023.pdf">Disclosing to Informed Traders</a> (with <a href="https://sites.google.com/site/ivanmarinovic128534/">I. Marinovic</a> and <a href="https://ksmith142.github.io/">K. Smith</a>)<br />
-      <em>Journal of Finance</em>, 2024, <a href="https://doi.org/10.1111/jofi.13296">79(2):1513-1578</a><br />
-      <em>Winner of the Accounting and Economics Society Notable Working Paper Award, 2020</em></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeSzydlowski2024.pdf">Harnessing the Overconfidence of the Crowd: A Theory of SPACs</a> (with <a href="https://sites.google.com/site/martinszydl/">M. Szydlowski</a>)<br />
-      <em>Journal of Financial Economics</em>, 2024, <a href="https://doi.org/10.1016/j.jfineco.2024.103787">153:103787</a><br />
-      Summary: <a href="https://corpgov.law.harvard.edu/2024/03/12/harnessing-the-overconfidence-of-the-crowd-a-theory-of-spacs/">Harvard Law School Forum on Corporate Governance</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BBKK2023.pdf">On the Voluntary Disclosure of Redundant Information</a> (with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a>, <a href="http://rkaniel.simon.rochester.edu">R. Kaniel</a> and <a href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
-      <em>Journal of Economic Theory</em>, 2023, <a href="https://doi.org/10.1016/j.jet.2023.105743">214:105743</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrish2022.pdf">Dynamics of Research and Strategic Trading</a> (with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a>)<br />
-      <em>Review of Financial Studies</em>, 2022, <a href="https://doi.org/10.1093/rfs/hhab029">35(2):908-961</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrish2020.pdf">Strategic trading and unobservable information acquisition</a> (with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a>)<br />
-      <em>Journal of Financial Economics</em>, 2020, <a href="https://doi.org/10.1016/j.jfineco.2020.05.007">138(2):458-482</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeDavisGondhi2018.pdf">When transparency improves, must prices reflect fundamentals better?</a> (with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)<br />
-      <em>Review of Financial Studies</em>, 2018, <a href="https://doi.org/10.1093/rfs/hhy034">31(6):2377-2414</a><br />
+<p><a
+href="https://snehalbanerjee.github.io/wp/BBS_Capital_Structure.pdf">Asymmetric
+Information, Disagreement, and the Valuation of Debt and
+Equity</a><br />
+(with <a href="https://sites.google.com/site/bbreondrish/">B.
+Breon-Drish</a> and <a href="https://ksmith142.github.io/">K.
+Smith</a>)<br />
+      <em>Journal of Financial Economics</em>, 2024, forthcoming</p>
+<p><a href="https://snehalbanerjee.github.io/wp/BBSwelfare.pdf">Feedback
+Effects and Systematic Risk Exposures</a> (with <a
+href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a> and
+<a href="https://ksmith142.github.io/">K. Smith</a>)  <br />
+      <em>Journal of Finance</em>, 2024, forthcoming</p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeDavisGondhi2024.pdf">Choosing
+to Disagree: Endogenous Dismissiveness and Overconfidence in Financial
+Markets</a><br />
+(with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a>
+and <a href="https://sites.google.com/view/naveenrgondhi/home">N.
+Gondhi</a>)<br />
+      <em>Journal of Finance</em>, 2024, <a
+href="https://doi.org/10.1111/jofi.13311">79(2):1635-1695</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BMS2023.pdf">Disclosing to
+Informed Traders</a> (with <a
+href="https://sites.google.com/site/ivanmarinovic128534/">I.
+Marinovic</a> and <a href="https://ksmith142.github.io/">K.
+Smith</a>)<br />
+      <em>Journal of Finance</em>, 2024, <a
+href="https://doi.org/10.1111/jofi.13296">79(2):1513-1578</a><br />
+      <em>Winner of the Accounting and Economics Society Notable Working
+Paper Award, 2020</em></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeSzydlowski2024.pdf">Harnessing
+the Overconfidence of the Crowd: A Theory of SPACs</a> (with <a
+href="https://sites.google.com/site/martinszydl/">M.
+Szydlowski</a>)<br />
+      <em>Journal of Financial Economics</em>, 2024, <a
+href="https://doi.org/10.1016/j.jfineco.2024.103787">153:103787</a><br />
+      Summary: <a
+href="https://corpgov.law.harvard.edu/2024/03/12/harnessing-the-overconfidence-of-the-crowd-a-theory-of-spacs/">Harvard
+Law School Forum on Corporate Governance</a></p>
+<p><a href="https://snehalbanerjee.github.io/papers/BBKK2023.pdf">On the
+Voluntary Disclosure of Redundant Information</a> (with <a
+href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a>, <a
+href="http://rkaniel.simon.rochester.edu">R. Kaniel</a> and <a
+href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
+      <em>Journal of Economic Theory</em>, 2023, <a
+href="https://doi.org/10.1016/j.jet.2023.105743">214:105743</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrish2022.pdf">Dynamics
+of Research and Strategic Trading</a> (with <a
+href="https://sites.google.com/site/bbreondrish/">B.
+Breon-Drish</a>)<br />
+      <em>Review of Financial Studies</em>, 2022, <a
+href="https://doi.org/10.1093/rfs/hhab029">35(2):908-961</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrish2020.pdf">Strategic
+trading and unobservable information acquisition</a> (with <a
+href="https://sites.google.com/site/bbreondrish/">B.
+Breon-Drish</a>)<br />
+      <em>Journal of Financial Economics</em>, 2020, <a
+href="https://doi.org/10.1016/j.jfineco.2020.05.007">138(2):458-482</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeDavisGondhi2018.pdf">When
+transparency improves, must prices reflect fundamentals better?</a>
+(with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a>
+and <a href="https://sites.google.com/view/naveenrgondhi/home">N.
+Gondhi</a>)<br />
+      <em>Review of Financial Studies</em>, 2018, <a
+href="https://doi.org/10.1093/rfs/hhy034">31(6):2377-2414</a><br />
 </p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeGreen2015.pdf">Signal or noise? Uncertainty and learning about whether other traders are informed</a> (with <a href="https://www.brettgreen.info/">B. Green</a>)<br />
-      <em>Journal of Financial Economics</em>, 2015, <a href="http://dx.doi.org/10.1016/j.jfineco.2015.05.003">117(2):398-423</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeGraveline2014.pdf">Trading in Derivatives when the Underlying is Scarce</a> (with <a href="https://www.linkedin.com/in/jeremy-graveline-phd-525a4794/">J. Graveline</a>)<br />
-      <em>Journal of Financial Economics</em>, 2014, <a href="http://authors.elsevier.com/sd/article/S0304405X13002973">111(3):589-608</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeGraveline2013.pdf">The Cost of Short-Selling Liquid Securities</a> (with <a href="https://www.linkedin.com/in/jeremy-graveline-phd-525a4794/">J. Graveline</a>)<br />
-      <em>Journal of Finance</em>, 2013, <a href="http://onlinelibrary.wiley.com/doi/10.1111/jofi.12009/abstract">68(2):637-664</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/ABC2013.pdf">Factor-loading Uncertainty and Expected Returns</a> (with <a href="http://acct.wharton.upenn.edu/faculty/armstrong/">C. Armstrong</a> and <a href="http://www.professorcarloscorona.com/">C. Corona</a>)<br />
-      <em>Review of Financial Studies</em>, 2013, <a href="http://rfs.oxfordjournals.org/content/26/1/158.abstract">26(1):158-207</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/Banerjee2011.pdf">Learning from Prices and the Dispersion in Beliefs</a><br />
-      <em>Review of Financial Studies</em>, 2011, <a href="http://rfs.oxfordjournals.org/content/24/9/3025.abstract">24(9):3025-3068</a><br />
-      <em>Winner of the <a href="http://rfssfs.org/awards/rfs-rising-scholar-award/">RFS Young Researcher Prize</a>, 2010</em></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeKremer2010.pdf">Disagreement and Learning: Dynamic Patterns of Trade</a> (with <a href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
-      <em>Journal of Finance</em>, 2010, <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2010.01570.x/abstract">65(4):1269-1302</a></p>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeKanielKremer2009.pdf">Price Drift as an Outcome of Differences in Higher Order Beliefs</a> (with <a href="http://rkaniel.simon.rochester.edu">R. Kaniel</a> and <a href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
-      <em>Review of Financial Studies</em>, 2009, <a href="http://rfs.oxfordjournals.org/content/22/9/3707.abstract">22(9):3707-3734</a>, <a href="https://snehalbanerjee.github.io/wp/BKK_correction.pdf">correction</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeGreen2015.pdf">Signal
+or noise? Uncertainty and learning about whether other traders are
+informed</a> (with <a href="https://www.brettgreen.info/">B.
+Green</a>)<br />
+      <em>Journal of Financial Economics</em>, 2015, <a
+href="http://dx.doi.org/10.1016/j.jfineco.2015.05.003">117(2):398-423</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeGraveline2014.pdf">Trading
+in Derivatives when the Underlying is Scarce</a> (with <a
+href="https://www.linkedin.com/in/jeremy-graveline-phd-525a4794/">J.
+Graveline</a>)<br />
+      <em>Journal of Financial Economics</em>, 2014, <a
+href="http://authors.elsevier.com/sd/article/S0304405X13002973">111(3):589-608</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeGraveline2013.pdf">The
+Cost of Short-Selling Liquid Securities</a> (with <a
+href="https://www.linkedin.com/in/jeremy-graveline-phd-525a4794/">J.
+Graveline</a>)<br />
+      <em>Journal of Finance</em>, 2013, <a
+href="http://onlinelibrary.wiley.com/doi/10.1111/jofi.12009/abstract">68(2):637-664</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/ABC2013.pdf">Factor-loading
+Uncertainty and Expected Returns</a> (with <a
+href="http://acct.wharton.upenn.edu/faculty/armstrong/">C. Armstrong</a>
+and <a href="http://www.professorcarloscorona.com/">C. Corona</a>)<br />
+      <em>Review of Financial Studies</em>, 2013, <a
+href="http://rfs.oxfordjournals.org/content/26/1/158.abstract">26(1):158-207</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/Banerjee2011.pdf">Learning
+from Prices and the Dispersion in Beliefs</a><br />
+      <em>Review of Financial Studies</em>, 2011, <a
+href="http://rfs.oxfordjournals.org/content/24/9/3025.abstract">24(9):3025-3068</a><br />
+      <em>Winner of the <a
+href="http://rfssfs.org/awards/rfs-rising-scholar-award/">RFS Young
+Researcher Prize</a>, 2010</em></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeKremer2010.pdf">Disagreement
+and Learning: Dynamic Patterns of Trade</a> (with <a
+href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
+      <em>Journal of Finance</em>, 2010, <a
+href="http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2010.01570.x/abstract">65(4):1269-1302</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeKanielKremer2009.pdf">Price
+Drift as an Outcome of Differences in Higher Order Beliefs</a> (with <a
+href="http://rkaniel.simon.rochester.edu">R. Kaniel</a> and <a
+href="http://ratio.huji.ac.il/node/231">I. Kremer</a>)<br />
+      <em>Review of Financial Studies</em>, 2009, <a
+href="http://rfs.oxfordjournals.org/content/22/9/3707.abstract">22(9):3707-3734</a>,
+<a
+href="https://snehalbanerjee.github.io/wp/BKK_correction.pdf">correction</a></p>
 <p><br />
 </p>
 <h3 id="other-research-publications">OTHER RESEARCH PUBLICATIONS</h3>
-<p><a href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrishEngelberg2020.pdf">Discussion of “Disclosure Processing Costs, Investors’ Information Choice, and Equity Market Outcomes: A Review”</a> (with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a> and <a href="http://rady.ucsd.edu/faculty/directory/engelberg/pub/portfolios/index.htm">Joey Engelberg</a>)<br />
-      <em>Journal of Accounting and Economics</em>, 2020, <a href="https://doi.org/10.1016/j.jacceco.2020.101337">70(2):101337</a></p>
+<p><a
+href="https://snehalbanerjee.github.io/papers/BanerjeeBreonDrishEngelberg2020.pdf">Discussion
+of “Disclosure Processing Costs, Investors’ Information Choice, and
+Equity Market Outcomes: A Review”</a> (with <a
+href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a> and
+<a
+href="http://rady.ucsd.edu/faculty/directory/engelberg/pub/portfolios/index.htm">Joey
+Engelberg</a>)<br />
+      <em>Journal of Accounting and Economics</em>, 2020, <a
+href="https://doi.org/10.1016/j.jacceco.2020.101337">70(2):101337</a></p>
 <p><br />
 </p>
 <h3 id="active-working-papers">ACTIVE WORKING PAPERS</h3>
-<p><a href="https://snehalbanerjee.github.io/wp/BBSwelfare.pdf">Feedback Effects and Systematic Risk Exposures</a> (with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a> and <a href="https://ksmith142.github.io/">K. Smith</a>)  <br />
-      <em>When prices reflect both cash-flow and discount-rate news, how does feedback affect</em><br />
-      <em>investment, firm value and welfare?</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BDGcoordinate.pdf">Motivated Beliefs in Coordination Games</a> (with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)  <br />
-      <em>Wishful thinkers agree to disagree about public information when strategic </em><br />
+<p>Public Information and the Securities Lending Market (with <a
+href="https://ksmith142.github.io/">K. Smith</a>)</p>
+<p>Competition and collusion among strategic traders who face
+uncertainty (with <a href="https://www.georgemalikov.com/">G.
+Malikov</a>)</p>
+<p><a
+href="https://snehalbanerjee.github.io/wp/BDGcoordinate.pdf">Motivated
+Beliefs in Coordination Games</a> (with <a
+href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a
+href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)
+ <br />
+      <em>Wishful thinkers agree to disagree about public information
+when strategic </em><br />
       <em>considerations are important.</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BBS_Capital_Structure.pdf">Asymmetric Information, Disagreement, and the Valuation of Debt and Equity</a><br />
-(with <a href="https://sites.google.com/site/bbreondrish/">B. Breon-Drish</a> and <a href="https://ksmith142.github.io/">K. Smith</a>)<br />
-      <em>How disagreement and liquidity demand affect debt and equity valuations depends on how</em><br />
-      <em>investors interpret the information in prices.</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BDG_DualRole.pdf">Incentivizing Effort and Informing Investment: The Dual Role of Stock Prices</a><br />
-(with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)  <br />
-      <em>Prices that are more informative about investment opportunities may be worse for contracting.</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BSfriends.pdf">Founder Friendly VCs</a> (with <a href="https://sites.google.com/site/martinszydl/">M. Szydlowski</a>)<br />
+<p><a
+href="https://snehalbanerjee.github.io/wp/BDG_DualRole.pdf">Incentivizing
+Effort and Informing Investment: The Dual Role of Stock Prices</a><br />
+(with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a>
+and <a href="https://sites.google.com/view/naveenrgondhi/home">N.
+Gondhi</a>)  <br />
+      <em>Prices that are more informative about investment
+opportunities may be worse for contracting.</em></p>
+<p><a href="https://snehalbanerjee.github.io/wp/BSfriends.pdf">Founder
+Friendly VCs</a> (with <a
+href="https://sites.google.com/site/martinszydl/">M.
+Szydlowski</a>)<br />
       <em>Entrepreneurs take less risk when VCs are friendlier.</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BDGcursed.pdf">Information Provision and the Curse of Knowledge</a> (with <a href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a href="https://sites.google.com/view/naveenrgondhi/home">N. Gondhi</a>)<br />
-      <em>The curse of knowledge improves information production and can improve communication.</em></p>
-<p><a href="https://snehalbanerjee.github.io/wp/BHKleaks.pdf">Leaks, disclosures and internal communication</a> (with <a href="https://sites.google.com/view/kerihu">K. Hu</a> and <a href="https://sites.google.com/view/taejin-kim">T. Kim</a>)<br />
-      <em>Higher likelihood of leaks can increase disclosure, but reduce efficiency.</em><br />
+<p><a
+href="https://snehalbanerjee.github.io/wp/BDGcursed.pdf">Information
+Provision and the Curse of Knowledge</a> (with <a
+href="https://sites.google.com/site/davisjesse/">J. Davis</a> and <a
+href="https://sites.google.com/view/naveenrgondhi/home">N.
+Gondhi</a>)<br />
+      <em>The curse of knowledge improves information production and can
+improve communication.</em></p>
+<p><a href="https://snehalbanerjee.github.io/wp/BHKleaks.pdf">Leaks,
+disclosures and internal communication</a> (with <a
+href="https://sites.google.com/view/kerihu">K. Hu</a> and <a
+href="https://sites.google.com/view/taejin-kim">T. Kim</a>)<br />
+      <em>Higher likelihood of leaks can increase disclosure, but reduce
+efficiency.</em><br />
 </p>
 <p><br />
 </p>
 <h3 id="inactive-working-papers">INACTIVE WORKING PAPERS</h3>
-<p><a href="https://snehalbanerjee.github.io/wp/BKM.pdf">Conceal to Coordinate</a> (with <a href="https://sites.google.com/view/taejin-kim">T. Kim</a> and <a href="https://www.linkedin.com/in/vishal-mangla-7259b51/">V. Mangla</a>)</p>
-<p><a href="https://snehalbanerjee.github.io/wp/BL.pdf">Transparency versus Tone: Public Communication with Limited Commitment</a> (with <a href="https://sites.google.com/site/qingmin/">Q. Liu</a> )</p>
+<p><a href="https://snehalbanerjee.github.io/wp/BKM.pdf">Conceal to
+Coordinate</a> (with <a
+href="https://sites.google.com/view/taejin-kim">T. Kim</a> and <a
+href="https://www.linkedin.com/in/vishal-mangla-7259b51/">V.
+Mangla</a>)</p>
+<p><a href="https://snehalbanerjee.github.io/wp/BL.pdf">Transparency
+versus Tone: Public Communication with Limited Commitment</a> (with <a
+href="https://sites.google.com/site/qingmin/">Q. Liu</a> )</p>
 <p><br />
 </p>
 <p><br />
