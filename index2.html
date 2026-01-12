@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snehal Banerjee</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --text-color: #1a1a1a;
+      --text-light: #666;
+      --bg-color: #ffffff;
+      --border-color: #e0e0e0;
+      --link-color: #0066cc;
+      --link-hover: #004499;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 30px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 40px 20px;
+        font-size: 15px;
+      }
+    }
+
+    header {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .header-text {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      font-size: 14px;
+      color: var(--text-light);
+      line-height: 1.8;
+    }
+
+    .contact-info a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border-color);
+      letter-spacing: -0.3px;
+    }
+
+    .publication {
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .publication:last-child {
+      border-bottom: none;
+    }
+
+    .publication-title {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .publication-title a {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+
+    .publication-title a:hover {
+      color: var(--link-color);
+      text-decoration: underline;
+    }
+
+    .publication-authors {
+      font-size: 15px;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .publication-authors a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .publication-authors a:hover {
+      text-decoration: underline;
+    }
+
+    .publication-insight {
+      font-size: 15px;
+      font-style: italic;
+      color: var(--text-color);
+      margin: 10px 0;
+      padding-left: 15px;
+      border-left: 3px solid var(--border-color);
+    }
+
+    .publication-journal {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 8px;
+    }
+
+    .publication-journal a {
+      color: var(--link-color);
+      text-decoration: none;
+    }
+
+    .publication-journal a:hover {
+      text-decoration: underline;
+    }
+
+    .award {
+      font-size: 13px;
+      color: var(--text-light);
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    .links {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+
+    .links a {
+      color: var(--link-color);
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+        <img src="banerjee.jpg" style="width:150px; height:180px; object-fit: cover;" />
+      <!-- <img src="banerjee.jpg" alt="Snehal Banerjee" class="profile-image" /> -->
+      <div class="header-text">
+        <h1>Snehal Banerjee</h1>
+        <div class="subtitle">Professor of Finance</div>
+        <div class="contact-info">
+          <a href="https://michiganross.umich.edu/">Stephen M. Ross School of Business</a><br />
+          <a href="https://umich.edu/">University of Michigan, Ann Arbor</a><br />
+          Office: R5430<br />
+          Email: <a href="mailto:snehalb@umich.edu">snehalb@umich.edu</a>
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <a href="banerjeecv.pdf">Curriculum Vitae</a> |
+      <a href="https://scholar.google.com/citations?user=w_H_FzEAAAAJ&hl=en">Google Scholar</a> |
+      <a href="https://ssrn.com/author=403802">SSRN</a>
+    </div>
+  </header>
+
+  <section id="working-papers">
+    <h2>Working Papers</h2>
+    
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BP_Climate_disclosure.pdf">When climate-risk disclosures reduce green investment and welfare</a>
+      </div>
+      <div class="publication-authors">with F. Prokopev</div>
+      <div class="publication-insight">Requiring companies to disclose climate risks can backfire: if firms base green investments on stock prices, more disclosure may actually reduce investment and hurt society.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BS_Qlearning.pdf">Trading against Algorithms: Price Dynamics and Risk-sharing in a Market with Q-learners</a>
+      </div>
+      <div class="publication-authors">with M. Szydlowski</div>
+      <div class="publication-insight">When AI algorithms learn to trade, they create more volatile but predictable price patterns, which can actually benefit investors overall.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BS_Securities_Lending.pdf">Public Information and the Securities Lending Market</a>
+      </div>
+      <div class="publication-authors">with K. Smith</div>
+      <div class="publication-insight">How much investors trade, what they pay to borrow stocks, and how prices move after news reveals how much investors disagree about the future.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BMP_UncertainKyle.pdf">Competition and Collusion Among Strategic Traders Who Face Uncertainty</a>
+      </div>
+      <div class="publication-authors">with G. Malikov and F. Prokopev</div>
+      <div class="publication-insight">When traders face high uncertainty, competition can actually work better than collusion for market efficiency.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BDGcoordinate.pdf">Motivated Beliefs in Coordination Games</a>
+      </div>
+      <div class="publication-authors">with J. Davis and N. Gondhi</div>
+      <div class="publication-insight">People who want to believe good news will ignore bad news when it helps them coordinate with others.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BHKleaks.pdf">Leaks, disclosures, and internal communication</a>
+      </div>
+      <div class="publication-authors">with K. Hu and T. Kim</div>
+      <div class="publication-insight">Stronger incentives to report wrongdoing reduce bad behavior, but can also make organizations less efficient.</div>
+      <div class="award">Best Paper Award, China International Conference in Finance (CICF), 2018</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BSfriends.pdf">Founder Friendly VCs</a>
+      </div>
+      <div class="publication-authors">with M. Szydlowski</div>
+      <div class="publication-insight">Entrepreneurs take less risk when venture capitalists are friendlier and more supportive.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BKM.pdf">Conceal to Coordinate</a>
+      </div>
+      <div class="publication-authors">with T. Kim and V. Mangla</div>
+      <div class="publication-insight">Sometimes hiding information helps people work together better, especially when full transparency would cause coordination problems.</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BL.pdf">Transparency versus Tone: Public Communication with Limited Commitment</a>
+      </div>
+      <div class="publication-authors">with Q. Liu</div>
+      <div class="publication-insight">Companies face a trade-off: being completely transparent versus using strategic language, and this affects how well markets work.</div>
+    </div>
+  </section>
+
+  <section id="refereed-publications">
+    <h2>Refereed Publications</h2>
+    
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BDGcursed.pdf">Information Provision and the Curse of Knowledge</a>
+      </div>
+      <div class="publication-authors">with J. Davis and N. Gondhi</div>
+      <div class="publication-insight">When people can't forget what they know, it actually helps them produce better information and communicate more effectively.</div>
+      <div class="publication-journal"><em>Management Science</em>, 2025, forthcoming</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="wp/BDG_DualRole.pdf">Incentivizing Effort and Informing Investment: The Dual Role of Stock Prices</a>
+      </div>
+      <div class="publication-authors">with J. Davis and N. Gondhi</div>
+      <div class="publication-insight">Stock prices serve two purposes: they motivate managers and they guide investment decisions, but making prices more informative can make them worse at motivating managers.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2025, forthcoming</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BBS2025welfare.pdf">Feedback Effects and Systematic Risk Exposures</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish and K. Smith</div>
+      <div class="publication-insight">When stock prices affect company fundamentals, this creates systematic risks that change how investors should build portfolios.</div>
+      <div class="publication-journal"><em>Journal of Finance</em>, 2025, <a href="https://doi.org/10.1111/jofi.13427">80(2):981-1028</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BBS2025.pdf">Asymmetric Information, Disagreement, and the Valuation of Debt and Equity</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish and K. Smith</div>
+      <div class="publication-insight">When some investors know more than others and investors disagree, debt and equity get valued very differently.</div>
+      <div class="publication-journal"><em>Journal of Financial Economics</em>, 2025, <a href="https://doi.org/10.1016/j.jfineco.2025.103995">165:103995</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeDavisGondhi2024.pdf">Choosing to Disagree: Endogenous Dismissiveness and Overconfidence in Financial Markets</a>
+      </div>
+      <div class="publication-authors">with J. Davis and N. Gondhi</div>
+      <div class="publication-insight">Investors sometimes choose to ignore information because being overconfident gives them an advantage in financial markets.</div>
+      <div class="publication-journal"><em>Journal of Finance</em>, 2024, <a href="https://doi.org/10.1111/jofi.13311">79(2):1635-1695</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BMS2024.pdf">Disclosing to Informed Traders</a>
+      </div>
+      <div class="publication-authors">with I. Marinovic and K. Smith</div>
+      <div class="publication-insight">The best disclosure policies consider how informed traders will use the information and trade on it, which affects market efficiency.</div>
+      <div class="publication-journal"><em>Journal of Finance</em>, 2024, <a href="https://doi.org/10.1111/jofi.13296">79(2):1513-1578</a></div>
+      <div class="award">Winner of the Accounting and Economics Society Notable Working Paper Award, 2020</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeSzydlowski2024.pdf">Harnessing the Overconfidence of the Crowd: A Theory of SPACs</a>
+      </div>
+      <div class="publication-authors">with M. Szydlowski</div>
+      <div class="publication-insight">SPACs are designed to take advantage of overconfident retail investors, allowing sponsors to profit from their optimism.</div>
+      <div class="publication-journal"><em>Journal of Financial Economics</em>, 2024, <a href="https://doi.org/10.1016/j.jfineco.2024.103787">153:103787</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BBKK2023.pdf">On the Voluntary Disclosure of Redundant Information</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish, R. Kaniel and I. Kremer</div>
+      <div class="publication-insight">Companies sometimes reveal information that investors already know to signal quality or change how investors think about their information environment.</div>
+      <div class="publication-journal"><em>Journal of Economic Theory</em>, 2023, <a href="https://doi.org/10.1016/j.jet.2023.105743">214:105743</a> (lead article)</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeBreonDrish2022.pdf">Dynamics of Research and Strategic Trading</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish</div>
+      <div class="publication-insight">The back-and-forth between doing research and trading strategically creates feedback effects that shape how efficient markets are.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2022, <a href="https://doi.org/10.1093/rfs/hhab029">35(2):908-961</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeBreonDrish2020.pdf">Strategic trading and unobservable information acquisition</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish</div>
+      <div class="publication-insight">When traders can secretly gather information, they adjust their trading strategies to take advantage of what they learn.</div>
+      <div class="publication-journal"><em>Journal of Financial Economics</em>, 2020, <a href="https://doi.org/10.1016/j.jfineco.2020.05.007">138(2):458-482</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeDavisGondhi2018.pdf">When transparency improves, must prices reflect fundamentals better?</a>
+      </div>
+      <div class="publication-authors">with J. Davis and N. Gondhi</div>
+      <div class="publication-insight">Making markets more transparent doesn't always make prices more accurate, because it changes how people behave and what information they gather.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2018, <a href="https://doi.org/10.1093/rfs/hhy034">31(6):2377-2414</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeGreen2015.pdf">Signal or noise? Uncertainty and learning about whether other traders are informed</a>
+      </div>
+      <div class="publication-authors">with B. Green</div>
+      <div class="publication-insight">Traders don't know if others are well-informed, so they learn from market activity, which affects how prices form and how they trade.</div>
+      <div class="publication-journal"><em>Journal of Financial Economics</em>, 2015, <a href="http://dx.doi.org/10.1016/j.jfineco.2015.05.003">117(2):398-423</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeGraveline2014.pdf">Trading in Derivatives when the Underlying is Scarce</a>
+      </div>
+      <div class="publication-authors">with J. J. Graveline</div>
+      <div class="publication-insight">When the underlying asset is hard to find, derivative markets work differently, affecting pricing and market efficiency.</div>
+      <div class="publication-journal"><em>Journal of Financial Economics</em>, 2014, <a href="http://authors.elsevier.com/sd/article/S0304405X13002973">111(3):589-608</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeGraveline2013.pdf">The Cost of Short-Selling Liquid Securities</a>
+      </div>
+      <div class="publication-authors">with J. J. Graveline</div>
+      <div class="publication-insight">Even for stocks that trade frequently, short-selling is expensive, which affects how efficiently markets work and how prices are discovered.</div>
+      <div class="publication-journal"><em>Journal of Finance</em>, 2013, <a href="http://onlinelibrary.wiley.com/doi/10.1111/jofi.12009/abstract">68(2):637-664</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/ABC2013.pdf">Factor-loading Uncertainty and Expected Returns</a>
+      </div>
+      <div class="publication-authors">with C. Armstrong and C. Corona</div>
+      <div class="publication-insight">When investors are uncertain about how stocks relate to market factors, this uncertainty affects expected returns and creates risk premiums.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2013, <a href="http://rfs.oxfordjournals.org/content/26/1/158.abstract">26(1):158-207</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/Banerjee2011.pdf">Learning from Prices and the Dispersion in Beliefs</a>
+      </div>
+      <div class="publication-authors"></div>
+      <div class="publication-insight">When investors have different beliefs, they learn from prices in different ways, creating feedback effects that influence market dynamics.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2011, <a href="http://rfs.oxfordjournals.org/content/24/9/3025.abstract">24(9):3025-3068</a></div>
+      <div class="award">Winner of the RFS Young Researcher Prize, 2010</div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeKremer2010.pdf">Disagreement and Learning: Dynamic Patterns of Trade</a>
+      </div>
+      <div class="publication-authors">with I. Kremer</div>
+      <div class="publication-insight">When investors disagree, they trade in predictable patterns as they learn from what happens in the market and update their beliefs.</div>
+      <div class="publication-journal"><em>Journal of Finance</em>, 2010, <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2010.01570.x/abstract">65(4):1269-1302</a></div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeKanielKremer2009.pdf">Price Drift as an Outcome of Differences in Higher Order Beliefs</a>
+      </div>
+      <div class="publication-authors">with R. Kaniel and I. Kremer</div>
+      <div class="publication-insight">Prices drift over time because investors have different beliefs about what other investors believe, creating persistent pricing mistakes.</div>
+      <div class="publication-journal"><em>Review of Financial Studies</em>, 2009, <a href="http://rfs.oxfordjournals.org/content/22/9/3707.abstract">22(9):3707-3734</a>, <a href="wp/BKK_correction.pdf">correction</a></div>
+    </div>
+  </section>
+
+  <section id="other-research">
+    <h2>Other Research Publications</h2>
+    
+    <div class="publication">
+      <div class="publication-title">
+        <a href="papers/BanerjeeBreonDrishEngelberg2020.pdf">Discussion of "Disclosure Processing Costs, Investors' Information Choice, and Equity Market Outcomes: A Review"</a>
+      </div>
+      <div class="publication-authors">with B. Breon-Drish and J. Engelberg</div>
+      <div class="publication-insight">The costs of processing company disclosures affect which information investors choose to pay attention to, which shapes how equity markets work.</div>
+      <div class="publication-journal"><em>Journal of Accounting and Economics</em>, 2020, <a href="https://doi.org/10.1016/j.jacceco.2020.101337">70(2):101337</a></div>
+    </div>
+  </section>
+</body>
+</html>
